@@ -1,2 +1,7 @@
 //= require_tree .
-$("#main-gallery").carousel();
+$(function() {
+  $('#main-gallery-images').carousel();
+  $("#gallery-link").on('click', function(){
+    $('#gallery-modal').modal();
+  });
+});
