@@ -30,11 +30,17 @@ header img {
   display: block;
   margin: 0 auto;
 }
+.modal {
+  width: 650px;
+}
 
-/*#main-gallery {
-  margin: 0 auto;
-  position: relative;
-}*/
+.modal.fade.in {
+  top: 35%;
+}
+
+.modal-body {
+  max-height: 750px;
+}
 
 #main-gallery-sidebar {
   position: relative;
@@ -50,6 +56,9 @@ header img {
   height: 200px;
   margin: 10px;
   border: dashed;
+}
+#profile {
+  position: relative;
 }
 .profile-gallery {
   clear: both;
@@ -71,8 +80,20 @@ header img {
 }
 
 #profile-link-2 {
-  top: 750px;
-  right: 250px;
+  height: 247px;
+  width: 186px;
+  top: 370px;
+  left: -2px;
+}
+
+#gallery-link {
+  position: absolute;
+  background-color: green;
+  opacity: .1;
+  height: 178px;
+  width: 186px;
+  top: 85px;
+  left: 252px;
 }
 #footer {
   margin: 0 auto;

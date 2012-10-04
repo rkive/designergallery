@@ -4,10 +4,15 @@ title: artbits
 #main-container
   %header
     = image_tag "header.jpg"
-  .container
-
+  .container#profile
+    %a#gallery-link
     = image_tag "top_channel_banner.jpg"
     = image_tag "celebrity_profile.jpg"
+
+  .modal#gallery-modal.hide.fade(role="dialog")
+    .modal-body
+      %button.close(type="button" data-dismiss="modal" aria-hidden="true") ×
+      = image_tag "curated_gallery.jpg"
 
   %footer.footer#footer
     = image_tag "footer.jpg"
