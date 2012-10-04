@@ -31,16 +31,18 @@ header img {
   margin: 0 auto;
 }
 
-#main-gallery {
+/*#main-gallery {
   margin: 0 auto;
   position: relative;
-}
+}*/
 
 #main-gallery-sidebar {
+  position: relative;
   float: left;
 }
 
-#main-gallery.carousel {
+#main-gallery-images {
+  position: relative;
   float: right;
 }
 
@@ -50,22 +52,22 @@ header img {
   border: dashed;
 }
 .profile-gallery {
-  /*height: 300px;*/
+  clear: both;
   margin: 10px;
-
+  position: relative;
 }
 
 .profile-gallery a {
   position: absolute;
   background-color: green;
   opacity: .1;
-  height: 150px;
-  width: 200px;
 }
 
 #profile-link-1 {
-  top: 750px;
-  right: 12px;
+  height: 247px;
+  width: 227px;
+  top: 59px;
+  left: -2px;
 }
 
 #profile-link-2 {

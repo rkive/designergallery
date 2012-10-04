@@ -7,21 +7,24 @@ title: Designer Gallery
   .container
 
     = image_tag "top_channel_banner.jpg"
-    #main-gallery-sidebar
-      = image_tag "gallery_sidebar.jpg"
-    #main-gallery.carousel.slide
-      .carousel-inner
-        .item.active
-          = image_tag "gallery_1.jpg"
-        .item
-          = image_tag "gallery_2.png"
-        .item
-          = image_tag "gallery_3.png"
-      %a.left.carousel-control(href="#main-gallery" data-slide="prev") ‹
-      %a.right.carousel-control(href="#main-gallery" data-slide="next") ›
+    #main-gallery
+      #main-gallery-sidebar
+        = image_tag "gallery_sidebar.jpg"
+      #main-gallery-images.carousel.slide
+        .carousel-inner
+          .item.active
+            %a(href="/celebrity.html")
+              = image_tag "gallery_1.jpg"
+          .item
+            = image_tag "gallery_2.png"
+          .item
+            = image_tag "gallery_3.png"
+        %a.left.carousel-control(href="#main-gallery-images" data-slide="prev") ‹
+        %a.right.carousel-control(href="#main-gallery-images" data-slide="next") ›
     .profile-gallery
+      %a#profile-link-1(href="/celebrity.html")
       = image_tag "home_page.jpg"
-      / %a#profile-link-1(href="/celebrity.html") HERE
+      
       / %a#profile-link-2
 
   %footer.footer#footer
