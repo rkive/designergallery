@@ -86,6 +86,14 @@ header img {
   left: -2px;
 }
 
+#profile-link-3 {
+  height: 247px;
+  width: 186px;
+  top: 370px;
+  left: 200px;
+  background: none;
+}
+
 #gallery-link {
   position: absolute;
   background-color: green;
