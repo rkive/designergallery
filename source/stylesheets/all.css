@@ -15,26 +15,63 @@
   background: url("../images/middleman.png") no-repeat center 100px;
   padding: 350px 0 10px;
   margin: 0; }*/
+img {
+  max-width: none;
+}
 
+header img {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  width: 980px;
+}
+.footer img {
+  display: block;
+  margin: 0 auto;
+}
 
 #main-gallery {
-  width: 600px;
   margin: 0 auto;
-  padding: 15px;
+  position: relative;
 }
+
+#main-gallery-sidebar {
+  float: left;
+}
+
+#main-gallery.carousel {
+  float: right;
+}
+
 #categories {
   height: 200px;
   margin: 10px;
   border: dashed;
 }
 .profile-gallery {
-  height: 300px;
+  /*height: 300px;*/
   margin: 10px;
-  border: dashed;
+
 }
-.profile-gallery #profile-link {
-  width: 191px;
-  height: 37px;
-  top: 118px;
+
+.profile-gallery a {
+  position: absolute;
+  background-color: green;
+  opacity: .1;
+  height: 150px;
+  width: 200px;
+}
+
+#profile-link-1 {
+  top: 750px;
   right: 12px;
+}
+
+#profile-link-2 {
+  top: 750px;
+  right: 250px;
+}
+#footer {
+  margin: 0 auto;
 }

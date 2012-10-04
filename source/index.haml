@@ -1,21 +1,28 @@
 ---
 title: Designer Gallery
 ---
-
-%header.jumbotron.subhead
+#main-container
+  %header
+    = image_tag "header.jpg"
   .container
-    %h1 Designer Gallery
-.container
-  #main-gallery.carousel.slide
-    .carousel-inner
-      .item.active
-        = image_tag "gallery_1.png"
-      .item
-        = image_tag "gallery_2.png"
-      .item
-        = image_tag "gallery_3.png"
-    %a.left.carousel-control(href="#main-gallery" data-slide="prev") ‹
-    %a.right.carousel-control(href="#main-gallery" data-slide="next") ›
-  #categories
-  .profile-gallery
-    %a#profile-link(href="/celebrity.html") HERE
+
+    = image_tag "top_channel_banner.jpg"
+    #main-gallery-sidebar
+      = image_tag "gallery_sidebar.jpg"
+    #main-gallery.carousel.slide
+      .carousel-inner
+        .item.active
+          = image_tag "gallery_1.jpg"
+        .item
+          = image_tag "gallery_2.png"
+        .item
+          = image_tag "gallery_3.png"
+      %a.left.carousel-control(href="#main-gallery" data-slide="prev") ‹
+      %a.right.carousel-control(href="#main-gallery" data-slide="next") ›
+    .profile-gallery
+      = image_tag "home_page.jpg"
+      / %a#profile-link-1(href="/celebrity.html") HERE
+      / %a#profile-link-2
+
+  %footer.footer#footer
+    = image_tag "footer.jpg"
