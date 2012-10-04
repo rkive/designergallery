@@ -9,8 +9,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "The Middleman" %></title>
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "../vendor/bootstrap/css/bootstrap", "all" %>
+    <%= javascript_include_tag  "jquery", "all", "bootstrap" %>
   </head>
   
   <body class="<%= page_classes %>">
