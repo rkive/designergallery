@@ -1,0 +1,21 @@
+---
+title: Designer Gallery
+---
+
+%header.jumbotron.subhead
+  .container
+    %h1 Designer Gallery
+.container
+  #main-gallery.carousel.slide
+    .carousel-inner
+      .item.active
+        = image_tag "gallery_1.png"
+      .item
+        = image_tag "gallery_2.png"
+      .item
+        = image_tag "gallery_3.png"
+    %a.left.carousel-control(href="#main-gallery" data-slide="prev") ‹
+    %a.right.carousel-control(href="#main-gallery" data-slide="next") ›
+  #categories
+  .profile-gallery
+    %a#profile-link(href="/celebrity.html") HERE
