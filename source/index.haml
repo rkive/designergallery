@@ -8,21 +8,15 @@ title: Designer Gallery
 
     = image_tag "top_channel_banner.jpg"
     #main-gallery
-      #main-gallery-sidebar
-        = image_tag "gallery_sidebar.jpg"
       #main-gallery-images.carousel.slide
         .carousel-inner
           .item.active
+            = image_tag "gallery_1.jpg"
+          .item
             %a(href="/celebrity.html")
-              = image_tag "gallery_1.jpg"
-            .carousel-caption
-              %h4 Third Thumbnail label
-              %p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
-
+              = image_tag "gallery_2.jpg"
           .item
-            = image_tag "gallery_2.png"
-          .item
-            = image_tag "gallery_3.png"
+            = image_tag "gallery_3.jpg"
         %a.left.carousel-control(href="#main-gallery-images" data-slide="prev") ‹
         %a.right.carousel-control(href="#main-gallery-images" data-slide="next") ›
     .profile-gallery

@@ -41,13 +41,12 @@ header img {
 .modal-body {
   max-height: 750px;
 }
-
-#main-gallery-sidebar {
-  position: relative;
-  float: left;
+.carousel-control {
+  top: 372px;
 }
 
 #main-gallery-images {
+  margin: 0 auto;
   position: relative;
   float: right;
 }
